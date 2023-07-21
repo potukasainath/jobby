@@ -13,7 +13,7 @@ const App = () => (
     <Route exact path="/login" component={LoginFrom} />
     <ProtectedRoute exact path="/" component={Home} />
     <ProtectedRoute exact path="/jobs" component={AllJobs} />
-    <ProtectedRoute exact path="/jobs':id" component={AboutJob} />
+    <ProtectedRoute exact path="/jobs/:id" component={AboutJob} />
     <Route exact path="/not-found" component={NotFound} />
     <Redirect to="/not-found" />
   </Switch>
